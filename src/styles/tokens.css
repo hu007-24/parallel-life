@@ -1,0 +1,22 @@
+:root {
+  /* Parallel Life 全局设计 Token */
+  --pl-bg: #f5f5f3;
+  --pl-ink: #111111;
+  --pl-muted: #777777;
+  --pl-silver: #bfc3c7;
+  --pl-dark: #17191c;
+  --pl-line: #ddddda;
+
+  --pl-radius-sm: 6px;
+  --pl-radius-md: 10px;
+  --pl-radius-lg: 16px;
+
+  --pl-shadow-subtle: 0 1px 2px rgba(17, 17, 17, 0.04);
+  --pl-shadow-card: 0 1px 3px rgba(17, 17, 17, 0.05), 0 8px 24px rgba(17, 17, 17, 0.04);
+  --pl-shadow-modal: 0 24px 64px rgba(17, 17, 17, 0.16);
+
+  --pl-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --pl-duration: 240ms;
+
+  --pl-space-page: clamp(24px, 5vw, 72px);
+}
