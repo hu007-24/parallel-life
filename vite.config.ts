@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  // 部署于子域名根路径（Qoder Sites / 静态宿主）；产物含 404.html SPA 回退
+  // 部署于域名根路径（静态宿主）；产物含 404.html SPA 回退
   base: '/',
   plugins: [react()],
   resolve: {

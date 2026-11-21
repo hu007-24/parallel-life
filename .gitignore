@@ -6,8 +6,3 @@ playwright-report
 test-results
 .DS_Store
 *.log
-
-# 不公开：参赛草稿 / Qoder Sites 部署描述 / 开发验证截图
-submission/作品帖草稿.md
-.Parallel Life.qoder.site
-.verify/

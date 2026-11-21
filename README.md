@@ -1,7 +1,5 @@
 # Parallel Life · 平行人生实验室
 
-> 高校创造赛 · LifeHack 生活娱乐方向
->
 > 程序化叙事 × 人生状态模拟 × 多分支时间线 × 平行宇宙对照。
 > **100% 本地引擎**：不接入任何大模型 API、AI 服务或后端生成内容。所有剧情、模拟计算、图鉴与数据管理均由本地程序与人工设计数据完成。
 
@@ -142,19 +140,10 @@ tests/e2e/          # smoke / life-flow(14 步) / responsive(三端)
 
 ## 部署说明
 
-### Qoder Sites（已准备私有草稿，未发布）
+### 静态宿主
 
-- 产物：`dist/`（`webDirectory: "dist"`，纯静态，无 Function / 数据库 / Secret 依赖）。
-- SPA 回退：prepare 时 `spa: true`（平台原生 index.html 回退）；产物另含 `404.html` 兜底。
-- 草稿状态：`artifactReady / dependenciesReady / canPublish: true`，`published: false`，
-  访问范围 **private**；地址 `parallel-life-lab-n98ni45ruv3.qoder.zone`（发布后生效）。
-- 发布：在 Sites 工作台预览确认后点击 Publish（或经 sites-hosting 流程 `publish_site`）。
-  本项目数据存于**访问者浏览器** IndexedDB，无需任何云端后端。
-- descriptor：`.Parallel Life.qoder.site`（工具生成，勿手改）。
-
-### 通用静态宿主
-
-`dist/` 可直接部署到任意静态宿主：
+`dist/` 为纯静态产物（无服务端函数、数据库或密钥依赖），可直接部署到任意静态宿主。
+数据存于**访问者浏览器** IndexedDB，无需任何云端后端。
 
 - 基础路径 `base: '/'`（子域名根路径）；如需子目录部署，改 `vite.config.ts` 的 `base` 后重建。
 - SPA 深链二选一：宿主 rewrite（nginx `try_files $uri /index.html;`、Netlify `_redirects`
